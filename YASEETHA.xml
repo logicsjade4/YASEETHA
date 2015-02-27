@@ -1,3 +1,12 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="32" x="4" y="1"></block>
+  <block type="comment_comment" id="45" x="2" y="1">
+    <field name="TEXT">MOVE</field>
+    <next>
+      <block type="movement_forward" id="32">
+        <next>
+          <block type="robot_delay" id="47" inline="true"></block>
+        </next>
+      </block>
+    </next>
+  </block>
 </xml>
