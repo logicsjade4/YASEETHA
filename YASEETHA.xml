@@ -38,8 +38,23 @@
                             <next>
                               <block type="led_select" id="234" inline="true">
                                 <field name="ACTION">OFF</field>
+                                <value name="LED">
+                                  <block type="math_number" id="247">
+                                    <field name="NUM">1</field>
+                                  </block>
+                                </value>
                                 <next>
-                                  <block type="movement_stop" id="223"></block>
+                                  <block type="led_select" id="248" inline="true">
+                                    <field name="ACTION">OFF</field>
+                                    <value name="LED">
+                                      <block type="math_number" id="249">
+                                        <field name="NUM">2</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="movement_stop" id="223"></block>
+                                    </next>
+                                  </block>
                                 </next>
                               </block>
                             </next>
