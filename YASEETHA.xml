@@ -2,7 +2,20 @@
   <block type="comment_comment" id="45" x="2" y="1">
     <field name="TEXT">MOVE</field>
     <next>
-      <block type="movement_forward" id="32"></block>
+      <block type="movement_forward" id="32">
+        <next>
+          <block type="robot_delay" id="49" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="64">
+                <field name="NUM">20</field>
+              </block>
+            </value>
+            <next>
+              <block type="movement_stop" id="74"></block>
+            </next>
+          </block>
+        </next>
+      </block>
     </next>
   </block>
 </xml>
