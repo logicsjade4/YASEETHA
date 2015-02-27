@@ -11,7 +11,16 @@
               </block>
             </value>
             <next>
-              <block type="movement_stop" id="74"></block>
+              <block type="movement_leftmotor" id="121" inline="true">
+                <value name="MOVLEFT">
+                  <block type="math_number" id="135">
+                    <field name="NUM">5</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="movement_stop" id="74"></block>
+                </next>
+              </block>
             </next>
           </block>
         </next>
